@@ -223,9 +223,17 @@ footer button {
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto auto auto;
   }
+  .item h1,
+  .item2 h1 {
+    font-size: 30px;
+  }
   .item2 img,
   .item2 button {
     width: 100%;
+  }
+  .item button,
+  .item2 button {
+    font-size: 20px;
   }
   footer {
     background-color: var(--md-sys-color-tertiary);
@@ -272,15 +280,19 @@ footer button {
   margin: 10px 10px;
   padding: 5px;
 }
+.container-about aside {
+  display: none;
+}
 
 @media (min-width: 576px) {
   .container-about {
     grid-template-areas:
-      "nav aside"
+      "nav main"
       "nav main"
       "footer footer";
     grid-template-columns: 1fr 4fr;
   }
+
   .main-about {
     display: flex;
     flex-direction: column;
@@ -296,10 +308,10 @@ footer button {
     padding: 60px 0;
   }
   .main-about button,
-  .main-about input,
-  .main-about label {
+  .main-about input {
     margin: 10px 300px;
     padding: 30px;
+    font-size: 50px;
   }
 }
 /* wwu section */
